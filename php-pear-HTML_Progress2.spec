@@ -22,6 +22,7 @@ Requires:	php-pear-HTML_Common >= 1.2.1
 Requires:	php-pear-Event_Dispatcher >= 0.9.1
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
+BuildRequires:	rpmbuild(macros) >= 1.300
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
