@@ -53,7 +53,7 @@ Features:
 
 In PEAR status of this package is: %{_status}.
 
-%description -l pl 
+%description -l pl
 Ten pakiet dostarcza sposób na dodanie w istniej±cych dokumentach
 XHTML w pe³ni konfigurowalnego paska postêpu. Przegl±darka musi
 obs³ugiwaæ DHTML.
