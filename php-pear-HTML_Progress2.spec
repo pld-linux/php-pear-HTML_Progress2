@@ -7,22 +7,22 @@
 Summary:	%{_pearname} - include a loading bar in your XHTML documents quickly and easily
 Summary(pl):	%{_pearname} - do³±czanie paska postêpu w dokumentach XHTML w szybki i prosty sposób
 Name:		php-pear-%{_pearname}
-Version:	2.0.0
+Version:	2.1.0
 Release:	1
 Epoch:		0
-License:	PHP License 3.0
+License:	PHP License 3.01
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	d904a0d117d810b1c9f2eef8a7d7cca0
+# Source0-md5:	e526878f65046ccd894dc77225662631
 URL:		http://pear.php.net/package/HTML_Progress2/
-Requires:	php-pear
-Requires:	php-common >= 3:4.2.0
-Requires:	php-pear-PHP_Compat >= 1.4.1
-Requires:	php-pear-HTML_Common >= 1.2.1
-Requires:	php-pear-Event_Dispatcher >= 0.9.1
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.300
+Requires:	php-common >= 3:4.2.0
+Requires:	php-pear
+Requires:	php-pear-Event_Dispatcher >= 0.9.1
+Requires:	php-pear-HTML_Common >= 1.2.1
+Requires:	php-pear-PHP_Compat >= 1.4.1
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -74,7 +74,7 @@ Mo¿liwo¶ci:
 - pozwala na istnienie wielu mierników postêpu na tej samej stronie
   bez u¿ycia iframe
  - system obs³ugi b³êdów obs³uguj±cy natywny PEAR_Error, ale tak¿e
-  PEAR_ErrorStack, a tak¿e dowolny inny system, który chcemy pod³±czyæ
+   PEAR_ErrorStack, a tak¿e dowolny inny system, który chcemy pod³±czyæ
 - gotowy na PHP 5.
 
 Ta klasa ma w PEAR status: %{_status}.
@@ -113,6 +113,7 @@ fi
 %defattr(644,root,root,755)
 %doc install.log optional-packages.txt docs
 %{php_pear_dir}/.registry/*.reg
+%{php_pear_dir}/data/HTML_Progress2/
 %{php_pear_dir}/HTML/Progress2
 %{php_pear_dir}/HTML/Progress2.php
 %{php_pear_dir}/HTML/Progress2_Lite.php
