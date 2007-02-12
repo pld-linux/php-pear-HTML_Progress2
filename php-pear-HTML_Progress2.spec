@@ -5,7 +5,7 @@
 %define		_pearname	HTML_Progress2
 
 Summary:	%{_pearname} - include a loading bar in your XHTML documents quickly and easily
-Summary(pl):	%{_pearname} - do³±czanie paska postêpu w dokumentach XHTML w szybki i prosty sposób
+Summary(pl.UTF-8):   %{_pearname} - doÅ‚Ä…czanie paska postÄ™pu w dokumentach XHTML w szybki i prosty sposÃ³b
 Name:		php-pear-%{_pearname}
 Version:	2.1.1
 Release:	1
@@ -53,35 +53,35 @@ Features:
 
 In PEAR status of this package is: %{_status}.
 
-%description -l pl
-Ten pakiet dostarcza sposób na dodanie w istniej±cych dokumentach
-XHTML w pe³ni konfigurowalnego paska postêpu. Przegl±darka musi
-obs³ugiwaæ DHTML.
+%description -l pl.UTF-8
+Ten pakiet dostarcza sposÃ³b na dodanie w istniejÄ…cych dokumentach
+XHTML w peÅ‚ni konfigurowalnego paska postÄ™pu. PrzeglÄ…darka musi
+obsÅ‚ugiwaÄ‡ DHTML.
 
-Mo¿liwo¶ci:
-- tworzenie poziomego lub pionowego paska, a tak¿e okrêgu, elipsy i
-  wielok±tów (kwadratu, prostok±ta)
-- umo¿liwia zastosowanie istniej±cych zewnêtrznych arkuszy styli i/lub
+MoÅ¼liwoÅ›ci:
+- tworzenie poziomego lub pionowego paska, a takÅ¼e okrÄ™gu, elipsy i
+  wielokÄ…tÃ³w (kwadratu, prostokÄ…ta)
+- umoÅ¼liwia zastosowanie istniejÄ…cych zewnÄ™trznych arkuszy styli i/lub
   JavaScriptu
-- wszystkie elementy (postêp, komórki, etykiety) s± konfigurowalne
-  poprzez ich w³a¶ciwo¶ci HTML
-- procenty/etykiety s± umieszczone naoko³o miernika postêpu
+- wszystkie elementy (postÄ™p, komÃ³rki, etykiety) sÄ… konfigurowalne
+  poprzez ich wÅ‚aÅ›ciwoÅ›ci HTML
+- procenty/etykiety sÄ… umieszczone naokoÅ‚o miernika postÄ™pu
 - jest zgodny ze wszystkimi standardami CSS/XHTML
-- bardzo ³atwa integracja ze wszystkimi silnikami szablonów
-- implementuje wzorzec projektowy Observer; mo¿na dodaæ Listeners
-- dodaje konfigurowalny wzorzec monitora do wy¶wietlania paska
-  postêpu; u¿ytkownik koñcowy mo¿e przerwaæ postêp w dowolnej chwili
-- pozwala na istnienie wielu mierników postêpu na tej samej stronie
-  bez u¿ycia iframe
- - system obs³ugi b³êdów obs³uguj±cy natywny PEAR_Error, ale tak¿e
-   PEAR_ErrorStack, a tak¿e dowolny inny system, który chcemy pod³±czyæ
+- bardzo Å‚atwa integracja ze wszystkimi silnikami szablonÃ³w
+- implementuje wzorzec projektowy Observer; moÅ¼na dodaÄ‡ Listeners
+- dodaje konfigurowalny wzorzec monitora do wyÅ›wietlania paska
+  postÄ™pu; uÅ¼ytkownik koÅ„cowy moÅ¼e przerwaÄ‡ postÄ™p w dowolnej chwili
+- pozwala na istnienie wielu miernikÃ³w postÄ™pu na tej samej stronie
+  bez uÅ¼ycia iframe
+ - system obsÅ‚ugi bÅ‚Ä™dÃ³w obsÅ‚ugujÄ…cy natywny PEAR_Error, ale takÅ¼e
+   PEAR_ErrorStack, a takÅ¼e dowolny inny system, ktÃ³ry chcemy podÅ‚Ä…czyÄ‡
 - gotowy na PHP 5.
 
 Ta klasa ma w PEAR status: %{_status}.
 
 %package tests
 Summary:	Tests for PEAR::%{_pearname}
-Summary(pl):	Testy dla PEAR::%{_pearname}
+Summary(pl.UTF-8):   Testy dla PEAR::%{_pearname}
 Group:		Development/Languages/PHP
 Requires:	%{name} = %{epoch}:%{version}-%{release}
 AutoReq:	no
@@ -90,7 +90,7 @@ AutoProv:	no
 %description tests
 Tests for PEAR::%{_pearname}.
 
-%description tests -l pl
+%description tests -l pl.UTF-8
 Testy dla PEAR::%{_pearname}.
 
 %prep
