@@ -5,7 +5,7 @@
 %define		_pearname	HTML_Progress2
 
 Summary:	%{_pearname} - include a loading bar in your XHTML documents quickly and easily
-Summary(pl.UTF-8):   %{_pearname} - dołączanie paska postępu w dokumentach XHTML w szybki i prosty sposób
+Summary(pl.UTF-8):	%{_pearname} - dołączanie paska postępu w dokumentach XHTML w szybki i prosty sposób
 Name:		php-pear-%{_pearname}
 Version:	2.1.1
 Release:	1
@@ -81,7 +81,7 @@ Ta klasa ma w PEAR status: %{_status}.
 
 %package tests
 Summary:	Tests for PEAR::%{_pearname}
-Summary(pl.UTF-8):   Testy dla PEAR::%{_pearname}
+Summary(pl.UTF-8):	Testy dla PEAR::%{_pearname}
 Group:		Development/Languages/PHP
 Requires:	%{name} = %{epoch}:%{version}-%{release}
 AutoReq:	no
