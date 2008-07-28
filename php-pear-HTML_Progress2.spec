@@ -7,13 +7,13 @@
 Summary:	%{_pearname} - include a loading bar in your XHTML documents quickly and easily
 Summary(pl.UTF-8):	%{_pearname} - dołączanie paska postępu w dokumentach XHTML w szybki i prosty sposób
 Name:		php-pear-%{_pearname}
-Version:	2.4.0
+Version:	2.4.1
 Release:	1
 Epoch:		0
 License:	PHP License 3.01
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	5fd09300e699ad3e003ed1ab79b30a7e
+# Source0-md5:	18a8e79948542ff5d37efcba9690c2e4
 URL:		http://pear.php.net/package/HTML_Progress2/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
