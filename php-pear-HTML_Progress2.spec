@@ -1,21 +1,17 @@
 %include	/usr/lib/rpm/macros.php
-%define		_class		HTML
-%define		_subclass	Progress2
 %define		_status		stable
 %define		_pearname	HTML_Progress2
-
 Summary:	%{_pearname} - include a loading bar in your XHTML documents quickly and easily
 Summary(pl.UTF-8):	%{_pearname} - dołączanie paska postępu w dokumentach XHTML w szybki i prosty sposób
 Name:		php-pear-%{_pearname}
 Version:	2.4.1
-Release:	1
-Epoch:		0
+Release:	2
 License:	PHP License 3.01
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
 # Source0-md5:	18a8e79948542ff5d37efcba9690c2e4
 URL:		http://pear.php.net/package/HTML_Progress2/
-BuildRequires:	php-pear-PEAR
+BuildRequires:	php-pear-PEAR >= 1:1.5.4
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.300
 Requires:	php-common >= 3:4.2.0
@@ -25,11 +21,22 @@ Requires:	php-pear-HTML_CSS >= 1.1.2
 Requires:	php-pear-HTML_Common >= 1.2.1
 Requires:	php-pear-PEAR-core >= 1:1.4.3
 Requires:	php-pear-PHP_Compat >= 1.4.1
+Suggests:	php-gd
+Suggests:	php-pear-HTML_AJAX
+Suggests:	php-pear-HTML_Page2
+Suggests:	php-pear-HTML_QuickForm
+Suggests:	php-pear-HTML_QuickForm_Controller
+Suggests:	php-pear-HTML_QuickForm_Renderer_Tableless
+Suggests:	php-pear-HTML_Template_IT
+Suggests:	php-pear-HTML_Template_Sigma
+Suggests:	php-pear-Image_Color
+Suggests:	php-pear-Log
+Suggests:	php-pear-PHP_Compat
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 # exclude optional dependencies
-%define		_noautoreq	'pear(PEAR.*)' 'pear(HTML/QuickForm.*)' 'pear(HTML/QuickForm/Controller.*)' 'pear(Image/Color.*)' 'pear(HTML/Page2.*)' 'pear(HTML/Template/IT.*)' 'pear(HTML/Template/Sigma.*)' 'pear(Log.*)' 'pear(gd.*)' 'pear(Smarty.*)' 'pear(PHP/Compat.*)' 'pear(HTML/QuickForm/Renderer/Tableless.*)'
+%define		_noautoreq	'pear(PEAR.*)' 'pear(HTML/QuickForm.*)' 'pear(HTML/QuickForm/Controller.*)' 'pear(Image/Color.*)' 'pear(HTML/Page2.*)' 'pear(HTML/Template/IT.*)' 'pear(HTML/Template/Sigma.*)' 'pear(Log.*)' 'pear(gd.*)' 'pear(Smarty.*)' 'pear(PHP/Compat.*)' 'pear(HTML/QuickForm/Renderer/Tableless.*)' pear(HTML/AJAX.*)
 
 %description
 This package provides a way to add a loading bar fully customizable in
@@ -85,9 +92,9 @@ Ta klasa ma w PEAR status: %{_status}.
 Summary:	Tests for PEAR::%{_pearname}
 Summary(pl.UTF-8):	Testy dla PEAR::%{_pearname}
 Group:		Development/Languages/PHP
-Requires:	%{name} = %{epoch}:%{version}-%{release}
-AutoReq:	no
+Requires:	%{name} = %{version}-%{release}
 AutoProv:	no
+AutoReq:	no
 
 %description tests
 Tests for PEAR::%{_pearname}.
