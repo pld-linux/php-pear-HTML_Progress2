@@ -1,4 +1,3 @@
-%include	/usr/lib/rpm/macros.php
 %define		_status		stable
 %define		_pearname	HTML_Progress2
 Summary:	%{_pearname} - include a loading bar in your XHTML documents quickly and easily
