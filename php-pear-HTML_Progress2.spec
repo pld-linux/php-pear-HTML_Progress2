@@ -31,7 +31,7 @@ Suggests:	php-pear-HTML_Template_Sigma
 Suggests:	php-pear-Image_Color
 Suggests:	php-pear-Log
 Suggests:	php-pear-PHP_Compat
-Obsoletes:	php-pear-HTML_Progress2-tests
+Obsoletes:	php-pear-HTML_Progress2-tests < 2.4.1-3
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
